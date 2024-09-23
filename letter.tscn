@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cto3tnlrg8wb8"]
+
+[ext_resource type="Theme" uid="uid://q0538rm3c3nc" path="res://letter.tres" id="1_gleqx"]
+[ext_resource type="Script" path="res://letter.gd" id="1_wvseu"]
+
+[node name="Letter" type="Panel"]
+custom_minimum_size = Vector2(40, 40)
+theme = ExtResource("1_gleqx")
+script = ExtResource("1_wvseu")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
