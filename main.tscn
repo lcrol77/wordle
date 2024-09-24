@@ -1,16 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://rmwoxgep0voi"]
+[gd_scene load_steps=2 format=3 uid="uid://rmwoxgep0voi"]
 
-[ext_resource type="PackedScene" uid="uid://cg4fw1s0l8aap" path="res://row.tscn" id="1_0uter"]
-[ext_resource type="PackedScene" uid="uid://cck5sqk4l6rsy" path="res://keyboard_button.tscn" id="1_x7qvf"]
+[ext_resource type="PackedScene" uid="uid://cg4fw1s0l8aap" path="res://scenes/row.tscn" id="1_0uter"]
 
 [node name="Main" type="Node"]
-
-[node name="KeyboardButton" parent="." instance=ExtResource("1_x7qvf")]
-offset_left = 554.0
-offset_top = 159.0
-offset_right = 597.0
-offset_bottom = 217.0
-state = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15
@@ -27,7 +19,7 @@ size_flags_horizontal = 4
 [node name="Rows" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
 layout_mode = 2
 
-[node name="Row" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
+[node name="Row1" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
 layout_mode = 2
 
 [node name="Row2" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]

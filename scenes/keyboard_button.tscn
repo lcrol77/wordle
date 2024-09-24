@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cck5sqk4l6rsy"]
 
-[ext_resource type="Theme" uid="uid://e3lg22t55hlp" path="res://keyboard_button.tres" id="1_jqkhh"]
-[ext_resource type="Script" path="res://keyboard_button.gd" id="2_3wr8j"]
+[ext_resource type="Theme" uid="uid://e3lg22t55hlp" path="res://styles/keyboard_button.tres" id="1_jqkhh"]
+[ext_resource type="Script" path="res://scripts/keyboard_button.gd" id="2_3wr8j"]
 
 [node name="KeyboardButton" type="Button"]
 custom_minimum_size = Vector2(43, 58)

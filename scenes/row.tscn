@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cg4fw1s0l8aap"]
 
-[ext_resource type="PackedScene" uid="uid://cto3tnlrg8wb8" path="res://letter.tscn" id="1_pi778"]
+[ext_resource type="PackedScene" uid="uid://cto3tnlrg8wb8" path="res://scenes/letter.tscn" id="1_pi778"]
 
 [node name="Row" type="HBoxContainer"]
 

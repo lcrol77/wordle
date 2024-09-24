@@ -1,9 +1,9 @@
 [gd_resource type="Theme" load_steps=8 format=4 uid="uid://e3lg22t55hlp"]
 
-[ext_resource type="StyleBox" uid="uid://ctvb142wh13wv" path="res://correct_right_placement.tres" id="1_m4hu2"]
-[ext_resource type="StyleBox" uid="uid://dp8hq34itk7n" path="res://correct_wrong_placement.tres" id="2_57jbf"]
-[ext_resource type="StyleBox" uid="uid://d1q6sirgimt61" path="res://letter_available.tres" id="3_tob3d"]
-[ext_resource type="StyleBox" uid="uid://cqeftrdm4a67a" path="res://used.tres" id="4_8dskw"]
+[ext_resource type="StyleBox" uid="uid://ctvb142wh13wv" path="res://styles/stylebox/correct_right_placement.tres" id="1_m4hu2"]
+[ext_resource type="StyleBox" uid="uid://dp8hq34itk7n" path="res://styles/stylebox/correct_wrong_placement.tres" id="2_57jbf"]
+[ext_resource type="StyleBox" uid="uid://d1q6sirgimt61" path="res://styles/stylebox/letter_available.tres" id="3_tob3d"]
+[ext_resource type="StyleBox" uid="uid://cqeftrdm4a67a" path="res://styles/stylebox/used.tres" id="4_8dskw"]
 
 [sub_resource type="Image" id="Image_bbfhs"]
 data = {
