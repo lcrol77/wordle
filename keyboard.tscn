@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cnc6gpi4mpd0w"]
+
+[node name="Keyboard" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="."]
+layout_mode = 2
