@@ -21,3 +21,15 @@ layout_mode = 2
 
 [node name="Row" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
 layout_mode = 2
+
+[node name="Row2" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
+layout_mode = 2
+
+[node name="Row3" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
+layout_mode = 2
+
+[node name="Row4" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
+layout_mode = 2
+
+[node name="Row5" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
+layout_mode = 2

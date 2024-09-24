@@ -6,5 +6,20 @@
 
 [node name="Letter" parent="." instance=ExtResource("1_pi778")]
 layout_mode = 2
-state = 3
+letter = "A"
+
+[node name="Letter2" parent="." instance=ExtResource("1_pi778")]
+layout_mode = 2
+letter = "A"
+
+[node name="Letter3" parent="." instance=ExtResource("1_pi778")]
+layout_mode = 2
+letter = "A"
+
+[node name="Letter4" parent="." instance=ExtResource("1_pi778")]
+layout_mode = 2
+letter = "A"
+
+[node name="Letter5" parent="." instance=ExtResource("1_pi778")]
+layout_mode = 2
 letter = "A"
