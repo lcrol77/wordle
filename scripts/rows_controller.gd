@@ -26,7 +26,9 @@ func on_letter_pressed(letter) -> void:
 	
 
 func _on_keyboard_backspace_pressed() -> void:
-	print("Back")
+	if active_letter_index >= 0:
+		rows[active_row_index].get_child(active_letter_index).letter = ""
+		active_letter_index -=1
 
 func _on_keyboard_enter_pressed() -> void:
 	print("Enter")
