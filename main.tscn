@@ -43,9 +43,11 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Keyboard" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_3nj1q")]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="WordPool" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource("2_7egq5")
 
 [connection signal="backspace_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_backspace_pressed"]
