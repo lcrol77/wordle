@@ -5,3 +5,6 @@ var words = ["ABACK"]
 
 func get_random_word()->String:
 	return words.pick_random()
+
+func check_word(word:String)-> bool:
+	return words.has(word)
