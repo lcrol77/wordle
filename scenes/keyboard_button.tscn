@@ -10,3 +10,5 @@ offset_bottom = 8.0
 theme = ExtResource("1_jqkhh")
 text = "A"
 script = ExtResource("2_3wr8j")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

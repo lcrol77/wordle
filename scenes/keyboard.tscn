@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnc6gpi4mpd0w"]
+[gd_scene load_steps=6 format=3 uid="uid://cnc6gpi4mpd0w"]
 
+[ext_resource type="Script" path="res://scripts/keyboard.gd" id="1_q2kaa"]
 [ext_resource type="PackedScene" uid="uid://cck5sqk4l6rsy" path="res://scenes/keyboard_button.tscn" id="1_qj25l"]
 [ext_resource type="PackedScene" uid="uid://dsoexxvbtxq6r" path="res://scenes/special_button.tscn" id="2_uqq57"]
 [ext_resource type="StyleBox" uid="uid://covpdfnqkh8pd" path="res://styles/stylebox/enter_button.tres" id="3_elvi4"]
@@ -8,6 +9,7 @@
 [node name="Keyboard" type="VBoxContainer"]
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_q2kaa")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -171,3 +173,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("4_gb8pc")
 texture_hover = ExtResource("4_gb8pc")
+
+[connection signal="pressed" from="HBoxContainer3/Enter" to="." method="_on_enter_pressed"]
+[connection signal="pressed" from="HBoxContainer3/Backspace/TextureButton" to="." method="_on_backspace_pressed"]

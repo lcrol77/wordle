@@ -8,7 +8,7 @@ const state_to_theme = ["letter_available", "used", "correct_wrong_placement", "
 
 func _ready() -> void:
 	name = letter
-	theme_type_variation = state_to_theme[state]
+	theme_type_variation = state_to_theme[state]	
 
 func set_state(new_state: Enums.State):
 	if new_state == Enums.State.Incorrect:
@@ -16,3 +16,6 @@ func set_state(new_state: Enums.State):
 	if state != Enums.State.CorrectRightPlace:
 		state = new_state
 		theme_type_variation = state_to_theme[state]
+
+func _on_pressed():
+	SignalBus.letter_pressed.emit(letter)

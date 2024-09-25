@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://rmwoxgep0voi"]
+[gd_scene load_steps=5 format=3 uid="uid://rmwoxgep0voi"]
 
 [ext_resource type="PackedScene" uid="uid://cg4fw1s0l8aap" path="res://scenes/row.tscn" id="1_0uter"]
+[ext_resource type="Script" path="res://scripts/rows_controller.gd" id="1_w8xxe"]
 [ext_resource type="PackedScene" uid="uid://cnc6gpi4mpd0w" path="res://scenes/keyboard.tscn" id="2_3nj1q"]
-[ext_resource type="Script" path="res://word_pool.gd" id="2_7egq5"]
+[ext_resource type="Script" path="res://scripts/word_pool.gd" id="2_7egq5"]
 
 [node name="Main" type="Node"]
 
@@ -24,6 +25,7 @@ size_flags_horizontal = 4
 
 [node name="Rows" type="VBoxContainer" parent="MarginContainer/VBoxContainer/CenterContainer"]
 layout_mode = 2
+script = ExtResource("1_w8xxe")
 
 [node name="Row1" parent="MarginContainer/VBoxContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
 layout_mode = 2
@@ -45,3 +47,6 @@ layout_mode = 2
 
 [node name="WordPool" type="Node" parent="."]
 script = ExtResource("2_7egq5")
+
+[connection signal="backspace_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_backspace_pressed"]
+[connection signal="enter_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_enter_pressed"]
