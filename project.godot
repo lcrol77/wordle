@@ -23,6 +23,7 @@ SignalBus="*res://globals/signal_bus.gd"
 [file_customization]
 
 folder_colors={
+"res://assets/": "red",
 "res://globals/": "blue",
 "res://scenes/": "green",
 "res://scripts/": "purple",
