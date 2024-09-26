@@ -11,8 +11,6 @@ func _ready() -> void:
 	theme_type_variation = state_to_theme[state]	
 
 func set_state(new_state: Enums.State):
-	if new_state == Enums.State.Incorrect:
-		disabled = true
 	if state != Enums.State.CorrectRightPlace:
 		state = new_state
 		theme_type_variation = state_to_theme[state]

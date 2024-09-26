@@ -33,20 +33,57 @@ func _on_keyboard_backspace_pressed() -> void:
 		active_letter_index -=1
 
 func _on_keyboard_enter_pressed() -> void:
-	var is_length_valid = await validdate_length()
+	var is_length_valid = await validate_length()
 	if !is_length_valid:
 		return
 	letter_tiles = rows[active_row_index].get_children()
 	letters = letter_tiles.map(func (c): return c.letter)
 	var word_to_check = "".join(letters)
 	if word_pool.check_word(word_to_check.to_upper()):
-		print("word")
+		on_word_valid(word_to_guess, letters)
 	else:
 		validation_alert.show_with_text("Word does not exist")
 
-func validdate_length():
+func validate_length():
 	if active_letter_index == 4:
 		return true
 		
 	validation_alert.show_with_text("Not enough letters")
 	return false 
+
+func on_word_valid(word: String, letters) -> void:
+	var validation_result = validate_word(word, letters)
+	for i in letter_tiles.size():
+		letter_tiles[i].set_tile_state(validation_result[i])
+	keyboard.on_letters_validated(letters, validation_result)
+	active_row_index += 1
+	active_letter_index = -1
+	var has_won = true
+	for result in validation_result:
+		if result != Enums.State.CorrectRightPlace:
+			has_won = false
+	if has_won:
+		on_win()
+	elif active_row_index >= rows.size():
+		active_row_index = rows.size()-1
+		on_lose()
+
+func on_win():
+	print_debug("Win")
+
+func on_lose():
+	print_debug("Lose")
+
+func validate_word(word: String, letters) -> Array[Enums.State]:
+	var validation_results: Array[Enums.State] = []
+	for i in  letters.size():
+		var current_letter = letters[i]
+		if word.to_upper().contains(current_letter.to_upper()):
+			var letter_idx_in_word = word.findn(current_letter)
+			if letter_idx_in_word == i:
+				validation_results.append(Enums.State.CorrectRightPlace)
+			else:
+				validation_results.append(Enums.State.CorrectWrongPlace)
+		else:
+			validation_results.append(Enums.State.Incorrect)
+	return validation_results

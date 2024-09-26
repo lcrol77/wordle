@@ -15,52 +15,52 @@ script = ExtResource("1_q2kaa")
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Q" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="Q" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "Q"
 letter = "Q"
 
-[node name="W" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="W" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "W"
 letter = "W"
 
-[node name="E" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="E" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "E"
 letter = "E"
 
-[node name="R" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="R" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "R"
 letter = "R"
 
-[node name="T" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="T" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "T"
 letter = "T"
 
-[node name="Y" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="Y" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "Y"
 letter = "Y"
 
-[node name="U" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="U" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "U"
 letter = "U"
 
-[node name="I" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="I" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "I"
 letter = "I"
 
-[node name="O" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="O" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "O"
 letter = "O"
 
-[node name="P" parent="HBoxContainer" instance=ExtResource("1_qj25l")]
+[node name="P" parent="HBoxContainer" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "P"
 letter = "P"
@@ -69,46 +69,46 @@ letter = "P"
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="A" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="A" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 letter = "A"
 
-[node name="S" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="S" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "S"
 letter = "S"
 
-[node name="D" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="D" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "D"
 letter = "D"
 
-[node name="F" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="F" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "F"
 letter = "F"
 
-[node name="G" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="G" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "G"
 letter = "G"
 
-[node name="H" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="H" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "H"
 letter = "H"
 
-[node name="J" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="J" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "J"
 letter = "J"
 
-[node name="K" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="K" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "K"
 letter = "K"
 
-[node name="L" parent="HBoxContainer2" instance=ExtResource("1_qj25l")]
+[node name="L" parent="HBoxContainer2" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "L"
 letter = "L"
@@ -126,37 +126,37 @@ theme_override_styles/hover = ExtResource("3_elvi4")
 theme_override_styles/normal = ExtResource("3_elvi4")
 text = "Enter"
 
-[node name="Z" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="Z" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "Z"
 letter = "Z"
 
-[node name="X" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="X" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "X"
 letter = "X"
 
-[node name="C" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="C" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "C"
 letter = "C"
 
-[node name="V" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="V" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "V"
 letter = "V"
 
-[node name="B" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="B" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "B"
 letter = "B"
 
-[node name="N" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="N" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "N"
 letter = "N"
 
-[node name="M" parent="HBoxContainer3" instance=ExtResource("1_qj25l")]
+[node name="M" parent="HBoxContainer3" groups=["keyboard"] instance=ExtResource("1_qj25l")]
 layout_mode = 2
 text = "M"
 letter = "M"
