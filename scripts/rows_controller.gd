@@ -79,11 +79,30 @@ func validate_word(word: String, letters) -> Array[Enums.State]:
 	for i in  letters.size():
 		var current_letter = letters[i]
 		if word.to_upper().contains(current_letter.to_upper()):
-			var letter_idx_in_word = word.findn(current_letter)
-			if letter_idx_in_word == i:
+			var letter_idx_in_word:Array[int] =get_all_occurances(word, current_letter)
+			var is_correct_right_place = false
+			for idx in letter_idx_in_word:
+				print_debug(idx)
+				print_debug(i)
+				if idx == i:
+					is_correct_right_place = true
+					break
+			if is_correct_right_place:
 				validation_results.append(Enums.State.CorrectRightPlace)
 			else:
 				validation_results.append(Enums.State.CorrectWrongPlace)
 		else:
 			validation_results.append(Enums.State.Incorrect)
 	return validation_results
+
+func get_all_occurances(word:String, current_letter) -> Array[int]:
+	var occurances: Array[int] = []
+	var last_index: int = 0
+	var is_present = true
+	while is_present :
+		last_index  = word.findn(current_letter, last_index)
+		if last_index == -1:
+			is_present = false
+			break
+		occurances.append(last_index)
+	return occurances
