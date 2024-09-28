@@ -82,8 +82,6 @@ func validate_word(word: String, letters) -> Array[Enums.State]:
 			var letter_idx_in_word:Array[int] =get_all_occurances(word, current_letter)
 			var is_correct_right_place = false
 			for idx in letter_idx_in_word:
-				print_debug(idx)
-				print_debug(i)
 				if idx == i:
 					is_correct_right_place = true
 					break
@@ -95,14 +93,13 @@ func validate_word(word: String, letters) -> Array[Enums.State]:
 			validation_results.append(Enums.State.Incorrect)
 	return validation_results
 
-func get_all_occurances(word:String, current_letter) -> Array[int]:
+func get_all_occurances(word: String, current_letter) -> Array[int]:
 	var occurances: Array[int] = []
-	var last_index: int = 0
-	var is_present = true
-	while is_present :
-		last_index  = word.findn(current_letter, last_index)
+	var last_index: int = word.findn(current_letter)
+	occurances.append(last_index)
+	while last_index != -1 and last_index + 1 < word.length() - 1:
+		last_index = word.findn(current_letter, last_index +1)
 		if last_index == -1:
-			is_present = false
 			break
 		occurances.append(last_index)
 	return occurances
