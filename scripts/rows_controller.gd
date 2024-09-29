@@ -1,10 +1,11 @@
 extends VBoxContainer
 class_name RowsController
 
+@onready var ui_canvas_layer = %UICanvasLayer
 @onready var word_pool: WordPool = %WordPool
 @onready var keyboard: Keyboard = %Keyboard
 @onready var validation_alert: Panel = %ValidationAlert
-
+@onready var game_over = preload("res://scenes/game_over.tscn")
 @onready var rows: Array[HBoxContainer] = [
 	$Row1, $Row2, $Row3, $Row4, $Row5
 ]
@@ -69,7 +70,12 @@ func on_word_valid(word: String, letters) -> void:
 		on_lose()
 
 func on_win():
-	print_debug("Win")
+	var instance: GameOver = game_over.instantiate()
+	ui_canvas_layer.add_child(instance)
+	instance.next.connect(on_game_over_next)
+
+func on_game_over_next() -> void:
+	print("Next")
 
 func on_lose():
 	print_debug("Lose")

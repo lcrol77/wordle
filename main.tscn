@@ -54,5 +54,8 @@ script = ExtResource("2_7egq5")
 [node name="ValidationAlert" parent="." instance=ExtResource("5_qki85")]
 unique_name_in_owner = true
 
+[node name="UICanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+
 [connection signal="backspace_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_backspace_pressed"]
 [connection signal="enter_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_enter_pressed"]
