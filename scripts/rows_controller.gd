@@ -73,6 +73,7 @@ func on_win():
 	var instance: GameOver = game_over.instantiate()
 	ui_canvas_layer.add_child(instance)
 	instance.next.connect(on_game_over_next)
+	instance.label.text = "Congratulations, you won!"
 
 func on_game_over_next() -> void:
 	print("Next")

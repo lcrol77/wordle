@@ -41,6 +41,8 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "STINKY STINKY STINKY"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
