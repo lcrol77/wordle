@@ -50,6 +50,7 @@ layout_mode = 2
 [node name="WordPool" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("2_7egq5")
+test_word = "AGILE"
 
 [node name="ValidationAlert" parent="." instance=ExtResource("5_qki85")]
 unique_name_in_owner = true
