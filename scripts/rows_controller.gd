@@ -19,6 +19,7 @@ var letter_tiles
 
 func _ready() -> void:
 	SignalBus.connect('letter_pressed', on_letter_pressed)
+	word_pool.init()
 	word_to_guess = word_pool.get_random_word()
 
 func on_letter_pressed(letter) -> void:
@@ -76,10 +77,13 @@ func on_win():
 	instance.label.text = "Congratulations, you won!"
 
 func on_game_over_next() -> void:
-	print("Next")
+	get_tree().reload_current_scene()
 
 func on_lose():
-	print_debug("Lose")
+	var instance: GameOver = game_over.instantiate()
+	ui_canvas_layer.add_child(instance)
+	instance.next.connect(on_game_over_next)
+	instance.label.text = "Sorry, you lost!"
 
 func validate_word(word: String, letters) -> Array[Enums.State]:
 	var validation_results: Array[Enums.State] = []

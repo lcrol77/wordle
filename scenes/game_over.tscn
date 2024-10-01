@@ -59,10 +59,13 @@ grow_horizontal = 2
 grow_vertical = 0
 alignment = 1
 
-[node name="Button" type="Button" parent="HBoxContainer"]
+[node name="PlayAgain" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 text = "Play Again"
 
-[node name="Button2" type="Button" parent="HBoxContainer"]
+[node name="Exit" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 text = "Exit"
+
+[connection signal="pressed" from="HBoxContainer/PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="HBoxContainer/Exit" to="." method="_on_exit_pressed"]

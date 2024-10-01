@@ -2,12 +2,12 @@ extends Node
 class_name WordPool
 
 @export var test_word = ""
-@onready var file_path  = "res://words.txt"
+var file_path  = "res://words.txt"
 
 # words is lowercase
 var words: PackedStringArray
 
-func _ready() -> void:
+func init() -> void:
 	words = load_file(file_path)
 	# godot adds an extra new line to the end of  text files
 	# need to remove to prevent cases in which this word returned is ""
