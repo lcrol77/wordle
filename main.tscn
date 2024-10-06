@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://rmwoxgep0voi"]
 
-[ext_resource type="PackedScene" uid="uid://cg4fw1s0l8aap" path="res://scenes/row.tscn" id="1_0uter"]
+[ext_resource type="PackedScene" uid="uid://cqpm0alwvs24u" path="res://scenes/rows.tscn" id="1_hwxyr"]
 [ext_resource type="Script" path="res://scripts/rows_controller.gd" id="1_w8xxe"]
 [ext_resource type="PackedScene" uid="uid://cnc6gpi4mpd0w" path="res://scenes/keyboard.tscn" id="2_3nj1q"]
 [ext_resource type="Script" path="res://scripts/word_pool.gd" id="2_7egq5"]
@@ -24,24 +24,9 @@ theme_override_constants/separation = 32
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Rows" type="VBoxContainer" parent="MarginContainer/VBoxContainer/CenterContainer"]
+[node name="Rows" parent="MarginContainer/VBoxContainer/CenterContainer" instance=ExtResource("1_hwxyr")]
 layout_mode = 2
 script = ExtResource("1_w8xxe")
-
-[node name="Row1" parent="MarginContainer/VBoxContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
-layout_mode = 2
-
-[node name="Row2" parent="MarginContainer/VBoxContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
-layout_mode = 2
-
-[node name="Row3" parent="MarginContainer/VBoxContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
-layout_mode = 2
-
-[node name="Row4" parent="MarginContainer/VBoxContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
-layout_mode = 2
-
-[node name="Row5" parent="MarginContainer/VBoxContainer/CenterContainer/Rows" instance=ExtResource("1_0uter")]
-layout_mode = 2
 
 [node name="Keyboard" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_3nj1q")]
 unique_name_in_owner = true
@@ -59,3 +44,5 @@ unique_name_in_owner = true
 
 [connection signal="backspace_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_backspace_pressed"]
 [connection signal="enter_pressed" from="MarginContainer/VBoxContainer/Keyboard" to="MarginContainer/VBoxContainer/CenterContainer/Rows" method="_on_keyboard_enter_pressed"]
+
+[editable path="MarginContainer/VBoxContainer/CenterContainer/Rows"]

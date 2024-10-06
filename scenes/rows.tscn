@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqpm0alwvs24u"]
+
+[ext_resource type="Script" path="res://scenes/rows.gd" id="1_w24ki"]
+[ext_resource type="PackedScene" uid="uid://cg4fw1s0l8aap" path="res://scenes/row.tscn" id="2_w7mdp"]
+
+[node name="Rows" type="VBoxContainer"]
+script = ExtResource("1_w24ki")
+
+[node name="Row1" parent="." instance=ExtResource("2_w7mdp")]
+layout_mode = 2
+
+[node name="Row2" parent="." instance=ExtResource("2_w7mdp")]
+layout_mode = 2
+
+[node name="Row3" parent="." instance=ExtResource("2_w7mdp")]
+layout_mode = 2
+
+[node name="Row4" parent="." instance=ExtResource("2_w7mdp")]
+layout_mode = 2
+
+[node name="Row5" parent="." instance=ExtResource("2_w7mdp")]
+layout_mode = 2
