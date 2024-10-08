@@ -13,7 +13,6 @@ script = ExtResource("1_6a5xv")
 
 [node name="ValidationAlert" parent="." instance=ExtResource("5_qki85")]
 unique_name_in_owner = true
-visible = true
 offset_left = -100.0
 offset_right = 100.0
 size_flags_horizontal = 4
@@ -62,6 +61,7 @@ size_flags_horizontal = 3
 metadata/_edit_use_anchors_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/RivalBoards"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -72,6 +72,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/RivalBoards"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
