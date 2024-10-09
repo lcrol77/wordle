@@ -13,7 +13,7 @@ func _ready() -> void:
 		$Connect/Name.text = desktop_path[desktop_path.size() - 2]
 
 func _on_start_pressed() -> void:
-	pass # Replace with function body.
+	gamestate.begin_game()
 
 func _on_host_pressed() -> void:
 	if $Connect/Name.text == "":

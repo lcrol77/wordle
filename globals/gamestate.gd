@@ -87,6 +87,9 @@ func join_game(ip: String, new_player_name: String) -> void:
 	peer.create_client(ip, DEFAULT_PORT)
 	multiplayer.set_multiplayer_peer(peer)
 
+func begin_game() -> void:
+	print_debug("game start")
+
 func end_game() -> void:
 	if has_node("/root/Main"):
 		# If the game is in progress, end it.
